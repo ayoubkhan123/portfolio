@@ -21,7 +21,7 @@ const About = () => {
         <p>web developer, with extension knowledge <br/>and years of experience working in web<br/>technologies and Ui / Ux design devlivering<br/> quality work.</p>
               <div className={classes.numsWrap}>
               <div>
-                  <h2>08+</h2>
+                  <h2>02+</h2>
                   <h6>years <br/> experience</h6>
               </div>
               <div>
@@ -29,13 +29,13 @@ const About = () => {
                   <h6>completed <br/>projects</h6>
               </div>
               <div>
-                  <h2>08+</h2>
-                  <h6>companies<br/> worked</h6>
+                  <h2>04+</h2>
+                  <h6>companies<br/> worked</h6> 
               </div>
 
 
               </div>
-              <Button variant="contained" color="primary">Download Cv <GetAppIcon/></Button>
+              <Button href="../../Assets/0-18448639978_20220208_201044_0000.pdf" download="cv.pdf" variant="contained" color="primary">Download Cv <GetAppIcon/></Button>
                 </div>
 
         </div>

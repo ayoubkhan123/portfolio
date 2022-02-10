@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from "./HomeStyle";
 import { Button } from '@material-ui/core';
-import img from "../../Assets/photo-1481437642641-2f0ae875f836.jpg";
+import img from "../../Assets/DSC_5399.jpg";
 import SendIcon from '@material-ui/icons/Send';
 
 const HomePart = () => {

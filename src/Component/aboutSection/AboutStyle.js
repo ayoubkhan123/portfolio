@@ -2,12 +2,11 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles((theme) =>({
 mainAbout:{
     width: "100%",
-    height: "100vh",
-    // padding: "100px 0px",
-    // paddingBottom: "60px",
-    // paddingBottom: "60px",
+    height: "45rem",
+    background: "linear-gradient( 262deg , #e6fffb, #e1f9f8)",
    [theme.breakpoints.down("sm")]:{
-            height: "auto !important",
+            height: "auto",
+            padding: "40px 0px",
    },
 
 },
@@ -32,6 +31,7 @@ aboutLeft:{
         width: "300px",
         height: "360px",
         borderRadius: "5px",
+        marginTop: "40px",
         [theme.breakpoints.down("xs")]:{
             width: "100%",
             },
