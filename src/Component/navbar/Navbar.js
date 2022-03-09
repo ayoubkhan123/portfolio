@@ -49,9 +49,9 @@ const Navbar1 = () => {
     return (
         <div className="mainNavbar">
 
-<Navbar bg="light" expand="lg" style={{background: "linear-gradient(to right, #283E51, #4B79A1)"}}>
+<Navbar bg="light" fixed="top" expand="lg" style={{background: "linear-gradient(to right, #283E51, #4B79A1)",zIndex: "100"}}>
   <Container fluid>
-    <Navbar.Brand href="#" style={{fontSize: "25px",fontWeight: "bold", color: "white"}}>AYYub khan 
+    <Navbar.Brand href="#" style={{fontSize: "25px",fontWeight: "bold", color: "white"}}>AYYub
     <img src={img1} style={{width: "80px",height: "auto", borderRadius: "50%",marginLeft: "20px"}}/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">

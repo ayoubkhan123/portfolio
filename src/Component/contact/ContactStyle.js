@@ -9,12 +9,12 @@ contactMain:{
         height: "auto",
     },
 },
-// InputFlex:{
+InputFlex:{
 // width: "100%",
 // display: "grid",
 // justifyContent: "center",
-// padding: "0px 50px",
-// },
+paddingTop: "60px",
+},
 contactText:{
     textAlign: "center",
     // width: "200px",
@@ -75,6 +75,7 @@ root: {
     flexWrap: "wrap-reverse",
     margin: "0px auto",
     textAlign: "center",
+    paddingBottom: "50px",
   },
 DataFlex:{
     // width: "300px",
@@ -91,6 +92,12 @@ input1:{
   width: "200px",
   height: "50px",
   outlined: "none",
+},
+btn_last:{
+    // textAlign: "center",
+    marginTop: "20px",
+    width: "140px",
+    
 },
 
 

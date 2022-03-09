@@ -17,9 +17,6 @@ const ServiceData=[
     title: "Branding",
     head: "Designer",
 },
-
-
-
 ]
 
 
