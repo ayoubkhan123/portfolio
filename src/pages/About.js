@@ -4,7 +4,7 @@ import About1 from "../Component/aboutSection/About";
 
 const About = () => {
     return (
-        <div>
+        <div style={{paddingTop: "0px"}}>
             {/* <h1>this is about page</h1> */}
             <About1/>
             

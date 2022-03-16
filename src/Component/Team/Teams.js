@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import useStyles from './TeamStyle';
 import Card from '@material-ui/core/Card';
@@ -12,14 +12,19 @@ import Typography from '@material-ui/core/Typography';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TeamData from "./TeamData";
 import img1 from "../../Assets/DSC_5399.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 
 const Teams = () => {
     const classes = useStyles();
+    useEffect(() =>{
+      Aos.init({duration: 2000})
+  },[]);
   return(
         <div className={classes.teamMain}>
-        <div className={classes.Teamtext}>
+        <div data-aos="fade-down"className={classes.Teamtext}>
             <h1>My Teams</h1>
             <h5> - Who with me -</h5>
         </div>
@@ -39,7 +44,7 @@ const Teams = () => {
                 TeamData.map((elem) =>{
                     return(
                         <>
-                        <Card className={classes.root}>
+                        <Card data-aos="zoom-in" className={classes.root}>
       <CardActionArea>
         <CardMedia
       

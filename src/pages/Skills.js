@@ -4,7 +4,7 @@ import Skill from "../Component/skills/Skill";
 
 const Skills = () => {
     return (
-        <div>
+        <div style={{paddingTop: "0px"}}>
             <Skill/>
         </div>
     )

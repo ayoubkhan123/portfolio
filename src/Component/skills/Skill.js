@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 import useStyles from "./skillStyle";
 import { Accordion,Typography,AccordionDetails,AccordionSummary,CircularProgress} from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -6,14 +6,18 @@ import CodeIcon from '@material-ui/icons/Code';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import SkillData from "./SkillData";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 const Skill = () => {
     const classes = useStyles();
+    useEffect(() =>{
+      Aos.init({duration: 2000})
+  },[]);
     return (
         <div className={classes.skill_main}>
-        <div className={classes.skill_text}>
+        <div data-aos="fade-down" className={classes.skill_text}>
             <h1>Skills</h1>
             <h5>My technical level</h5>
         </div>

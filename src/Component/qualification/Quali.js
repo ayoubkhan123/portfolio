@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -8,7 +8,8 @@ import Box from '@material-ui/core/Box';
 import useStyles from './QualiiStyle';
 import CastForEducationIcon from '@material-ui/icons/CastForEducation';
 import Slider from '@material-ui/core/Slider';
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -39,7 +40,9 @@ interface TabPanelProps {
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
-
+  useEffect(() =>{
+    Aos.init({duration: 2000})
+},[]);
   return (
     <div
       role="tabpanel"
@@ -77,11 +80,11 @@ function Quali() {
 
   return (
       <div className={classes.main}>
-      <div style={{textAlign: "center"}}>
+      <div data-aos="fade-down" style={{textAlign: "center",paddingBottom: "20px"}}>
         <h1>Qualification</h1>
         <h5>My Personal Journey</h5>
       </div>
-    <div className={classes.root}>
+    <div data-aos="flip-up" className={classes.root}>
       <AppBar position="static" style={{height: "50px",padding: "0px 50px"}}>
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
           <Tab label="Education"  {...a11yProps(0)} />

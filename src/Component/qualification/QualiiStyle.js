@@ -3,9 +3,10 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles((theme) =>({
     main:{
         // width: "100%",
-        height: "40rem",
+        height: "auto",
         display: "grid",
         justifyContent: "center",
+        padding: "40px 0px",
         overflow: "hidden",
         marginBottom: "10px",
         [theme.breakpoints.down("sm")]:{

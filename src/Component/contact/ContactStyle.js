@@ -2,7 +2,7 @@ import {makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) =>({
 contactMain:{
-    height: "44rem",
+    height: "auto",
     width: "100%",
     paddingTop: "60px",
     [theme.breakpoints.down("sm")]:{
@@ -23,18 +23,18 @@ contactText:{
 },
 root: {
     // display: "block !important",
-    display: "flex",
-    width: "465px",
-    marginBottom: "20px",
+    display: "block",
+    width: "456px",
+    margin: "10px 0px",
     [theme.breakpoints.down("xs")]:{
-        width: "30ch !important",
+        width: "90% !important",
         // display: "block",
         margin: "0px auto",
         // justifyContent: "center",
-        // marginBottom: "10px",
+        marginBottom: "10px",
         '& > *': {
-          margin: theme.spacing(1),
-          width: '30ch',
+          // margin: theme.spacing(1),
+          // width: '30ch',
           
         },
     },
@@ -52,10 +52,12 @@ root: {
     [theme.breakpoints.down("xs")]:{
       width: "100% !important",
       display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       flexDirection: "column",
       '& > *': {
         // margin: theme.spacing(1),
-        width: '30ch !important',
+        width: '90% !important',
       },
     },
     '& > *': {
@@ -95,8 +97,15 @@ input1:{
 },
 btn_last:{
     // textAlign: "center",
-    marginTop: "20px",
-    width: "140px",
+    marginTop: "10px",
+    width: "160px",
+    fontWeight: "bold",
+    display: "flex",
+    justifyContent: "center",
+    [theme.breakpoints.down("xs")]:{
+      width: "160px !important",
+
+    },
     
 },
 

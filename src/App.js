@@ -12,7 +12,9 @@ export default function App() {
     <BrowserRouter>
     <Navbar1/>
     <Routess/>
+    <div style={{paddingTop: "0px"}}>
     <Footer/>
+    </div>
     </BrowserRouter>
     </div>
   )

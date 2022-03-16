@@ -2,7 +2,7 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles((theme) =>({
 mainService:{
     width: "100%",
-    height: "46rem",
+    // height: "46rem",
     display: "grid",
     justifyContent: "center",
     paddingBottom: "20px",

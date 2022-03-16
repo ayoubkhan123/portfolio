@@ -6,7 +6,7 @@ import Box from "../Component/projectBox/Box";
 
 const Portfolio = () => {
     return (
-        <div>
+        <div style={{paddingTop: "0px"}}>
             <Teams/>
             <Box />
         </div>

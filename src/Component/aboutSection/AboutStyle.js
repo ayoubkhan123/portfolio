@@ -46,6 +46,9 @@ aboutRight:{
     },
 
 },
+download:{
+    textDecoration: "none",
+},
 
 flexWrap:{
     display: "flex",

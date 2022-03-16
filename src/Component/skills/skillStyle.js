@@ -4,7 +4,7 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles((theme) =>({
     skill_main:{
         width: "100%",
-        height: "40rem",
+        height: "auto",
         paddingTop: "40px",
         [theme.breakpoints.down("sm")]:{
               height: "auto",

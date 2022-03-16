@@ -4,7 +4,7 @@ import Contact1 from "../Component/contact/Contact";
 
 const Contact = () => {
     return (
-        <div>
+        <div style={{paddingTop: "0px"}}>
             <Contact1/>
         </div>
     )

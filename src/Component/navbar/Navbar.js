@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import {NavDropdown,Button,FormControl,Form,Nav,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,24 +9,48 @@ import img1 from "../../Assets/kisspng-def-con-logo-gray-wolf-5b01f8e1d0fce7.676
 
 
 const useStyles = makeStyles((theme) =>({
-    links:{
-      // marginLeft: "30px", 
-      color: "white",
-     
-    },
+
+    
     mainNavbar:{
-      background: "#4B79A1",  /* fallback for old browsers */
-      background: "linear-gradient(to right, #283E51, #4B79A1)",  /* Chrome 10-25, Safari 5.1-6 */
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      zIndex: "1000",
+      position: "relative",
+      top: "0",
+
+      background: "black", 
+      background: "linear-gradient(to right, #283E51, #4B79A1)",  
       
+    },
+    links:{
+      "&::after":{
+        content: "",
+        color: "red !important",
+        position: "absolute",
+        height: "5px",
+        left: "0px",
+        width: "100%",
+        background: "purple",
+      },
     },
     link:{
       fontSize: "18px",
+      position: "relative",
+      width: "100%",
+      "&::before":{
+        content: "",
+        // display: "block",
+        padding: "0px 30px",
+        color: "red !important",
+        position: "absolute",
+        top: "0px",
+        height: "15px",
+        left: "0px",
+        width: "100%",
+        backgroundColor: "red !important",
+      },
       "&:hover":{
         color: "orange",
-        // borderBottom: "3px solid blue",
       },
-      color: "white",
+      color: "black",
       fontWeight: "bold",
         padding: "0px 25px",
         textDecoration: "none", 
@@ -41,18 +65,63 @@ const useStyles = makeStyles((theme) =>({
             },
         },
     },
+    navbar2:{
+      position: "fixed",
+      top: "0",
+      left: "0",
+      fontSize: "25px",
+      fontWeight: "bold",
+       color: "white !important",
+       "& link":{
+        color: "red !important",
+       },
+       zIndex: "10000",
+       transition: "all 0.8s ease-in-out !important",
+       background: "#4B79A1 !important",
+      width: "100%",
+    },
+    navbar_bg:{
+        position: "sticky",
+        top: "0",
+        left: "0",
+        fontSize: "25px",
+        fontWeight: "bold",
+         color: "white !important",
+         zIndex: "10000",
+        width: "100%",
+        background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc) !important",
+        "& :link":{
+        color: "white !important",
+        '& > *' : {
+          color: '#fff',
+          fontWeight: 600
+      }
+       }
+    },
 
 }))
 
 const Navbar1 = () => {
     const classes = useStyles();
+      const [color, setColor] = useState(false)
+      const changeColor = () =>{
+          if(window.scrollY >= 90){
+              setColor(true)
+          }
+          else{
+            setColor(false)
+          }
+      }
+      console.log(window.scrollY)
+      window.addEventListener("scroll", changeColor)
+    
     return (
-        <div className="mainNavbar">
+        <header className="mainNavbar">
 
-<Navbar bg="light" fixed="top" expand="lg" style={{background: "linear-gradient(to right, #283E51, #4B79A1)",zIndex: "100"}}>
+<Navbar id="menu" className={`${classes.navbar2}  ${!color && classes.navbar_bg}`} bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#" style={{fontSize: "25px",fontWeight: "bold", color: "white"}}>AYYub
-    <img src={img1} style={{width: "80px",height: "auto", borderRadius: "50%",marginLeft: "20px"}}/></Navbar.Brand>
+    <Navbar.Brand href="#" style={{color: "white"}}>AYYub
+    <img src={img1} alt="" style={{width: "80px",height: "auto", borderRadius: "50%",marginLeft: "20px"} }/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -63,7 +132,7 @@ const Navbar1 = () => {
     
    
       </Nav>
-      <Form className="d-flex">
+      <Form>
         {/* <FormControl
           type="search"
           placeholder="Search"
@@ -86,7 +155,7 @@ const Navbar1 = () => {
   </Container>
 </Navbar>
 
-        </div>
+        </header>
     )
 }
 
