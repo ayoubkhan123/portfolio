@@ -12,6 +12,7 @@ const Footer = () => {
   return (
     <div className={classes.mainFooter}>
         <div className={classes.footerBase}>
+        <div>
             <h1>Code Opacity</h1>
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, <br/> eum? adipisicing elit.</h5>
 
@@ -21,6 +22,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/ayub_khan011/"><InstagramIcon style={{cursor: "pointer",fontSize: "35px"}}/></a>
             <PersonIcon style={{cursor: "pointer",fontSize: "35px"}}/>
             <MessageIcon style={{cursor: "pointer",fontSize: "35px"}}/>
+            </div>
             </div>
 
         </div>

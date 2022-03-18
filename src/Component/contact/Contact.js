@@ -61,9 +61,9 @@ const Contact = () => {
 
 
 
-                <div data-aos="flip-up" className={classes.InputFlex}>
+                <div  className={classes.InputFlex}>
                 {/* <div> */}
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail} data-aos="fade-down">
                 <div className={classes.root}>
                 {/* <form className={classes.root} noValidate autoComplete="off"> */}
       <TextField style={{marginBottom: "10px",}} id="filled-basic" label="Name" name="name" variant="filled" fullWidth/>
