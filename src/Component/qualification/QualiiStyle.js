@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) =>({
       root1: {
         height: 300,
         position: "relative",
+        marginLeft: "30px",
         [theme.breakpoints.down("xs")]:{
             width: "315px",
             margin: "0px -64px",

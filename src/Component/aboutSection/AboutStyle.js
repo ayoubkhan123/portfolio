@@ -12,8 +12,8 @@ mainAbout:{
 },
 aboutText:{
     textAlign: "center",
-    paddingBottom: "40px",
-    paddingTop: "30px",
+    paddingBottom: "80px",
+    paddingTop: "50px",
     [theme.breakpoints.down("xs")]:{
         "& h1":{
             fontSize: "40px",
@@ -31,7 +31,7 @@ aboutLeft:{
         width: "300px",
         height: "360px",
         borderRadius: "5px",
-        marginTop: "40px",
+        // marginTop: "40px",
         [theme.breakpoints.down("xs")]:{
             width: "100%",
             },
@@ -61,6 +61,7 @@ numsWrap:{
     textAlign: "center",
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
     paddingBottom: "25px",
     // gap: "20px",
 },
