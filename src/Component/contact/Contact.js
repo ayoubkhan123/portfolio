@@ -46,7 +46,7 @@ const Contact = () => {
 
                 <div className={classes.DataFlex}>
                 <div> <h4><EmailIcon style={{fontSize: "50px"}}/></h4></div>
-                    <div> <h3>Email</h3><h5>Ayubbkhan@gmail.com</h5></div>
+                    <div> <h3>Email</h3><h5>khan@gmail.com</h5></div>
                 </div>
 
                 <div className={classes.DataFlex}>
@@ -66,25 +66,26 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} data-aos="fade-down">
                 <div className={classes.root}>
                 {/* <form className={classes.root} noValidate autoComplete="off"> */}
-      <TextField style={{marginBottom: "10px",}} id="filled-basic" label="Name" name="name" variant="filled" fullWidth/>
-      <TextField id="filled-basic" label="Email" name="email" variant="filled" fullWidth />
+      <TextField style={{marginBottom: "10px",}} required  id="filled-basic" label="Name" name="name" variant="filled" fullWidth/>
+      <TextField id="filled-basic" label="Email" required  name="email" variant="filled" fullWidth />
     {/* </form> */}
     </div>
                 {/* </div> */}
                 <div className={classes.root1} >
                 {/* <form className={classes.root1} noValidate autoComplete="off"> */}
-                <TextField style={{marginBottom: "20px"}} id="filled-basic" label="Project" name="message"  variant="filled" />
+                <TextField required style={{marginBottom: "20px"}} id="filled-basic" label="Project" name="message"  variant="filled" />
 
     <TextField
     id="outlined-multiline-static"
     label="Message"
     name="message"
+    required 
     multiline
     rows={10}
     //   defaultValue="Default Value"
     variant="outlined"
       />
-                <Button color="primary" onClick={Submit} variant="outlined" type="submit" value="send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
+                <Button color="primary" variant="outlined" type="submit" value="send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
 
     {/* </form> */}
     

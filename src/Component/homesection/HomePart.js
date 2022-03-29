@@ -5,10 +5,13 @@ import img from "../../Assets/DSC_5399.jpg";
 import SendIcon from '@material-ui/icons/Send';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {useNavigate} from "react-router-dom";
 
 const HomePart = () => {
     const classes = useStyles();
     const purple = "linear-gradient( 262deg , #c2cfe3, #f8f9fc)";
+    const navigate = useNavigate();
+   
     const [color, changeColor] = useState(purple);
     const bgChange = () =>{
             let newG = "white";
@@ -26,10 +29,10 @@ const HomePart = () => {
         <div className={classes.HomeMain} style={{background: color}}>
                     <div data-aos="fade-down" className={classes.mainText}>
                     <h1>Hi,I`am Ayyub</h1>
-                    <h4>Frontend developer</h4>
+                    <h4>Front-end developer</h4>
                     <p>High level experience in web design and <br/> development knowledge producing <br/> quality work</p>
-                    <Button onClick={bgChange} onMouseEnter={bgChanges} variant="contained" color="primary">
-        Primary <span style={{paddingLeft: "15px"}}><SendIcon/></span>
+                    <Button onClick={() => navigate("/portfolio")} variant="contained" color="primary">
+        My Teams <span style={{paddingLeft: "15px"}}><SendIcon/></span>
       </Button>
       
 

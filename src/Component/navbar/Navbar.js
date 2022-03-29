@@ -4,50 +4,25 @@ import {NavDropdown,Button,FormControl,Form,Nav,Container} from 'react-bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from "react-router-dom";
 // import MenuIcon from '@material-ui/icons/Menu';
+import {useNavigate} from "react-router-dom";
 import { makeStyles,} from '@material-ui/core/styles';
 import img1 from "../../Assets/kisspng-def-con-logo-gray-wolf-5b01f8e1d0fce7.676530041526855905856.jpg";
 
 
 const useStyles = makeStyles((theme) =>({
-
     
     mainNavbar:{
       zIndex: "1000",
       position: "relative",
       top: "0",
 
-      background: "black", 
-      background: "linear-gradient(to right, #283E51, #4B79A1)",  
-      
     },
-    links:{
-      "&::after":{
-        content: "",
-        color: "red !important",
-        position: "absolute",
-        height: "5px",
-        left: "0px",
-        width: "100%",
-        background: "purple",
-      },
-    },
+  
     link:{
       fontSize: "18px",
       position: "relative",
       width: "100%",
-      "&::before":{
-        content: "",
-        // display: "block",
-        padding: "0px 30px",
-        color: "red !important",
-        position: "absolute",
-        top: "0px",
-        height: "15px",
-        left: "0px",
-        width: "100%",
-        backgroundColor: "red !important",
-      },
-      "&:hover":{
+      "&:hover":{ 
         color: "orange",
       },
       color: "black",
@@ -60,7 +35,7 @@ const useStyles = makeStyles((theme) =>({
             paddingBottom: "30px",
             overFlow: "hidden",
             "&:hover":{
-              color: "black",
+              // color: "black",
             border: "none",
             },
         },
@@ -71,12 +46,12 @@ const useStyles = makeStyles((theme) =>({
       left: "0",
       fontSize: "25px",
       fontWeight: "bold",
-       color: "white !important",
-       "& link":{
-        color: "red !important",
+      //  color: "white !important",
+       "& :link":{
+        // color: "white !important",
        },
        zIndex: "10000",
-       transition: "all 0.8s ease-in-out !important",
+       transition: "all 0.8s linear !important",
        background: "#4B79A1 !important",
       width: "100%",
     },
@@ -86,23 +61,29 @@ const useStyles = makeStyles((theme) =>({
         left: "0",
         fontSize: "25px",
         fontWeight: "bold",
-         color: "white !important",
+        //  color: "red !important",
          zIndex: "10000",
         width: "100%",
         background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc) !important",
+        "& links":{
+
         "& :link":{
-        color: "white !important",
-        '& > *' : {
-          color: '#fff',
-          fontWeight: 600
-      }
+        color: "black !important",
+      //   '& > *' : {
+      //     color: 'red !important',
+      //     fontWeight: 600
+      // }
        }
+      },
+
     },
 
 }))
 
 const Navbar1 = () => {
     const classes = useStyles();
+    const navigate = useNavigate()
+
       const [color, setColor] = useState(false)
       const changeColor = () =>{
           if(window.scrollY >= 90){
@@ -148,7 +129,7 @@ const Navbar1 = () => {
             <Link className={classes.link} to="/portfolio">Team</Link>
 
             <Link className={classes.link} to="/contact">Contact me</Link>
-            <Button variant="warning" color="primary">Hire Me</Button>
+            <Button onClick={() => {navigate("/contact")}} variant="warning" color="primary">Hire Me</Button>
             </nav>
       </Form>
     </Navbar.Collapse>
