@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/teamworks/static/css/main.e34cc838.css",
-    "main.js": "/teamworks/static/js/main.f67bf873.js",
+    "main.css": "/teamworks/static/css/main.151bfff1.css",
+    "main.js": "/teamworks/static/js/main.4b931d66.js",
     "static/js/787.ee9b4fc8.chunk.js": "/teamworks/static/js/787.ee9b4fc8.chunk.js",
+    "static/media/ABIGAIL STANFORD.pdf": "/teamworks/static/media/ABIGAIL STANFORD.e21108f50d4f4337863b.pdf",
     "static/media/kisspng-def-con-logo-gray-wolf-5b01f8e1d0fce7.jpg": "/teamworks/static/media/kisspng-def-con-logo-gray-wolf-5b01f8e1d0fce7.676530041526855905856.4880b2a8b658a8088433.jpg",
     "static/media/DSC_5399.jpg": "/teamworks/static/media/DSC_5399.21a5a0e3c3c3c1759087.jpg",
     "static/media/photo-1481437642641-2f0ae875f836.jpg": "/teamworks/static/media/photo-1481437642641-2f0ae875f836.9be53ba6526f111de595.jpg",
     "index.html": "/teamworks/index.html",
-    "main.e34cc838.css.map": "/teamworks/static/css/main.e34cc838.css.map",
-    "main.f67bf873.js.map": "/teamworks/static/js/main.f67bf873.js.map",
+    "main.151bfff1.css.map": "/teamworks/static/css/main.151bfff1.css.map",
+    "main.4b931d66.js.map": "/teamworks/static/js/main.4b931d66.js.map",
     "787.ee9b4fc8.chunk.js.map": "/teamworks/static/js/787.ee9b4fc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e34cc838.css",
-    "static/js/main.f67bf873.js"
+    "static/css/main.151bfff1.css",
+    "static/js/main.4b931d66.js"
   ]
 }
