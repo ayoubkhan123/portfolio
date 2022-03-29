@@ -9,9 +9,20 @@ import emailjs from "emailjs-com";
 import Aos from "aos";
 import SendIcon from '@material-ui/icons/Send';
 import "aos/dist/aos.css";
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
 
 const Contact = () => {
     const classes = useStyles();
+    const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
     useEffect(() =>{
         Aos.init({duration: 2000})
     },[]);
@@ -27,11 +38,9 @@ const Contact = () => {
               console.log(error.text);
           });
       };
-      const Submit = () =>{
-          alert("Successfully Submmitted We Will Contact You Very Soon")
-      }
     
   return(
+      
       <div className={classes.contactMain}>
             <div data-aos="zoom-in-right" className={classes.contactText}><h1>Contact Me</h1>
             <h5>Get in touch</h5>
@@ -63,7 +72,7 @@ const Contact = () => {
 
                 <div  className={classes.InputFlex}>
                 {/* <div> */}
-                <form ref={form} onSubmit={sendEmail} data-aos="fade-down">
+                <form method="GET" ref={form} onSubmit={sendEmail} data-aos="fade-down">
                 <div className={classes.root}>
                 {/* <form className={classes.root} noValidate autoComplete="off"> */}
       <TextField style={{marginBottom: "10px",}} required  id="filled-basic" label="Name" name="name" variant="filled" fullWidth/>
@@ -85,8 +94,29 @@ const Contact = () => {
     //   defaultValue="Default Value"
     variant="outlined"
       />
-                <Button color="primary" variant="outlined" type="submit" value="send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
-
+                <div>
+                <Button color="primary" onClick={handleOpen} variant="outlined" type="submit" value="send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
+    
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <div className={classes.paper}>
+            <h2 id="transition-modal-title">Successfully</h2>
+            <p id="transition-modal-description">We will contact you very soon.</p>
+          </div>
+        </Fade>
+      </Modal>
+    </div>
     {/* </form> */}
     
                 </div>

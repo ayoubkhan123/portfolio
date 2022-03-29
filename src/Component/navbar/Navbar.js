@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) =>({
         // color: "white !important",
        },
        zIndex: "10000",
-       transition: "all 0.8s linear !important",
+       transition: "0.8s all ease-in-out",
        background: "#4B79A1 !important",
       width: "100%",
     },

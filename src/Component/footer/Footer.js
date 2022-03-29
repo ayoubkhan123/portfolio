@@ -17,9 +17,9 @@ const Footer = () => {
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, <br/> eum? adipisicing elit.</h5>
 
             <div className={classes.icons}>
-            <a href="https://www.facebook.com/ayub.khanhunzai"><FacebookIcon style={{cursor: "pointer",fontSize: "35px"}}/></a>
+            <a href><FacebookIcon style={{cursor: "pointer",fontSize: "35px"}}/></a>
             <TwitterIcon style={{cursor: "pointer",fontSize: "35px"}}/>
-            <a href="https://www.instagram.com/ayub_khan011/"><InstagramIcon style={{cursor: "pointer",fontSize: "35px"}}/></a>
+            <a href><InstagramIcon style={{cursor: "pointer",fontSize: "35px"}}/></a>
             <PersonIcon style={{cursor: "pointer",fontSize: "35px"}}/>
             <MessageIcon style={{cursor: "pointer",fontSize: "35px"}}/>
             </div>

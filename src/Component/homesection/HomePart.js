@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useStyles from "./HomeStyle";
 import { Button } from '@material-ui/core';
-import img from "../../Assets/DSC_5399.jpg";
+import img from "../../Assets/DSC_5294.jpg";
 import SendIcon from '@material-ui/icons/Send';
 import Aos from "aos";
 import "aos/dist/aos.css";
