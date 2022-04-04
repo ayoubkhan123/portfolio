@@ -16,17 +16,15 @@ const Routess = () => {
       <Router>
       <Navbar1/>
       <Routes>
-      <Route exact path="/" element={<Home/>}/>
-      <Route exact path="/about" element={<About/>}/>
-      <Route exact path="/skill" element={<Skill/>}/>
-      <Route exact path="/services" element={<Services/>}/>
-      <Route exact path="/portfolio" element={<Portfolio/>}/>
-
-      <Route path="/contact" element={<Contact/>}/>
+      <Route path="*" exact element={<Home/>}/>
+      <Route path="/about" exact element={<About/>}/>
+      <Route path="/skill" exact element={<Skill/>}/>
+      <Route path="/services" exact element={<Services/>}/>
+      <Route path="/portfolio" exact element={<Portfolio/>}/>
+      <Route path="/contact" exact element={<Contact/>}/>
       </Routes>
       <Footer/>
       </Router>
-
         </div>
     )
 }

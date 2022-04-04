@@ -1,12 +1,10 @@
 import React, { useEffect }from 'react';
-import { makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import useStyles from './QualiiStyle';
-import CastForEducationIcon from '@material-ui/icons/CastForEducation';
 import Slider from '@material-ui/core/Slider';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -97,16 +95,16 @@ function Quali() {
         {/* Education */}
       </Typography>
       <div className={classes.root1}>
-      <h4>Ui/Ux</h4>
-      <h4 style={{fontSize: "12px",paddingTop: "26px"}}>codeacedamy<br/><br/>2019-2022</h4>
-      <h5>Frontend Developer</h5>
-      <h5 style={{fontSize: "12px",paddingTop: "26px"}}>codecedamy <br/><br/>2019 - 2022</h5>
+      <h4>Matriculation</h4>
+      <h4 style={{fontSize: "12px",paddingTop: "26px"}}>School<br/><br/>2016-2017</h4>
+      <h5>Matriculation</h5>
+      <h5 style={{fontSize: "12px",paddingTop: "26px"}}>School <br/><br/>2016 - 2017</h5>
 
-      <h6>Web design</h6>
-      <h6 style={{fontSize: "12px",paddingTop: "26px"}}>codecedamy <br/><br/>2019 - 2022</h6>
+      <h6>Intermediate</h6>
+      <h6 style={{fontSize: "12px",paddingTop: "26px"}}>Collage<br/><br/>2018 - 2020</h6>
 
-      <h3>Web development</h3>
-      <h3 style={{fontSize: "12px",paddingTop: "26px"}}>codecedamy <br/><br/>2019 - 2022</h3>
+      <h3>Intermediate</h3>
+      <h3 style={{fontSize: "12px",paddingTop: "26px"}}>Collage<br/><br/>2018 - 2020</h3>
 
         <Slider style={{marginLeft: "138px"}}
         disabled
@@ -121,15 +119,13 @@ function Quali() {
       <TabPanel value={value} index={1}>
       <div className={classes.root1}>
       <h4>Frontend</h4>
-      <h4 style={{fontSize: "12px",paddingTop: "26px"}}>codeacedamy<br/><br/>2019-2022</h4>
-      <h5 style={{paddingTop: "20px"}}>Software engineer</h5>
-      <h5 style={{fontSize: "12px",paddingTop: "45px"}}>codecedamy <br/><br/>2019 - 2022</h5>
+      <h4 style={{fontSize: "12px",paddingTop: "26px"}}>Webloop software house<br/><br/>2019-2022</h4>
+      <h5 style={{paddingTop: "20px"}}>Web development</h5>
+      <h5 style={{fontSize: "12px",paddingTop: "45px"}}>Webloop software house<br/><br/>2019 - 2022</h5>
 
-      <h6 style={{paddingTop: "20px"}}>Ui designer</h6>
-      <h6 style={{fontSize: "12px",paddingTop: "45px"}}>codecedamy <br/><br/>2019 - 2022</h6>
+      <h6 style={{paddingTop: "20px"}}>React JS</h6>
+      <h6 style={{fontSize: "12px",paddingTop: "45px"}}>Webloop<br/><br/>2019 - 2022</h6>
 
-      {/* <h3>Web development</h3>
-      <h3 style={{fontSize: "12px",paddingTop: "26px"}}>codecedamy <br/><br/>2019 - 2022</h3> */}
       <Slider style={{marginLeft: "138px"}}
         disabled
           orientation="vertical"

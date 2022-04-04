@@ -41,14 +41,14 @@ const Skill = () => {
         <h5>{elem.html}<span>90%</span></h5>
         <ProgressBar now={90} />
                 <br/>
-        <h5>{elem.css}<span>85%</span></h5>
+        <h5>{elem.css}<span>95%</span></h5>
+        <ProgressBar now={95} />
+        <br/>
+        <h5>{elem.js}<span>85%</span></h5>
         <ProgressBar now={85} />
         <br/>
-        <h5>{elem.js}<span>60%</span></h5>
-        <ProgressBar now={60} />
-        <br/>
-        <h5>{elem.react}<span>70%</span></h5>
-        <ProgressBar now={70} />
+        <h5>{elem.react}<span>90%</span></h5>
+        <ProgressBar now={90} />
 
           </Typography>
         </AccordionDetails>

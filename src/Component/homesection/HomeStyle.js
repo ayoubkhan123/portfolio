@@ -18,6 +18,7 @@ HomeMain:{
 },
 mainText:{
     padding: "90px 0px",
+            textShadow: "0.025em 0.025em 0 yellow, 0.05em 0.05em 0 blue, 0.075em 0.075em 0 red, 0.1em 0.1em 0 black",
     "& button":{
         width: "200px",
         height: "40px",
@@ -28,8 +29,14 @@ mainText:{
         fontSize: "45px",
         fontWeight: "bold",
         paddingBottom: "10px",
+        textShadow: "0.025em 0.025em 0 yellow, 0.05em 0.05em 0 blue, 0.075em 0.075em 0 red, 0.1em 0.1em 0 black",
+    },
+    "& h4":{
+        textShadow: "0.025em 0.025em 0 yellow, 0.05em 0.05em 0 blue, 0.075em 0.075em 0 red, 0.1em 0.1em 0 black",
+
     },
 },
+
 images:{
     width: "400px",
     animationName: "example",
@@ -49,7 +56,6 @@ images:{
         [theme.breakpoints.down("xs")]:{
         width: "80%",
         },
-
     },
    
 },

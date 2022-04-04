@@ -1,5 +1,7 @@
-import React,{useRef,useEffect} from 'react';
+import React,{useRef,useEffect, useState} from 'react';
 import useStyles from "./ContactStyle";
+import {Formik,Form,Field,ErrorMessage,FieldArray,FastField} from "formik";
+import * as Yup from "yup"; 
 import CallIcon from '@material-ui/icons/Call';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
@@ -16,9 +18,16 @@ import Fade from '@material-ui/core/Fade';
 const Contact = () => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
-
+  //   const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+const onSubmit = (values, onSubmitProps) => {
+  console.log("Form data", values)
+  console.log("submit props", onSubmitProps)
+  onSubmitProps.setSubmitting(false)
+  onSubmitProps.resetForm()
+}
   const handleOpen = () => {
-    setOpen(true);
+    setOpen(true);   
   };
   const handleClose = () => {
     setOpen(false);
@@ -29,8 +38,7 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('service_2mx54nf', 'template_clsn8xe', form.current,
+        emailjs.sendForm('service_c9ol0er', 'template_f8ug3fe', form.current,
         'ZwVSUMz1u5z74S1AS')
           .then((result) => {
               console.log(result.text);
@@ -55,7 +63,7 @@ const Contact = () => {
 
                 <div className={classes.DataFlex}>
                 <div> <h4><EmailIcon style={{fontSize: "50px"}}/></h4></div>
-                    <div> <h3>Email</h3><h5>khan@gmail.com</h5></div>
+                    <div> <h3>Email</h3><h5>ayubbkhan05<br/>@gmail.com</h5></div>
                 </div>
 
                 <div className={classes.DataFlex}>
@@ -71,33 +79,21 @@ const Contact = () => {
 
 
                 <div  className={classes.InputFlex}>
-                {/* <div> */}
                 <form method="GET" ref={form} onSubmit={sendEmail} data-aos="fade-down">
                 <div className={classes.root}>
-                {/* <form className={classes.root} noValidate autoComplete="off"> */}
-      <TextField style={{marginBottom: "10px",}} required  id="filled-basic" label="Name" name="name" variant="filled" fullWidth/>
-      <TextField id="filled-basic" label="Email" required  name="email" variant="filled" fullWidth />
-    {/* </form> */}
+      <TextField style={{marginBottom: "10px",}} required  id="filled-basic" label="Name" type="name" name="name" variant="filled" fullWidth/>
+      
+      <TextField id="filled-basic" type="email" name="email" label="Email" required variant="filled" fullWidth />  
     </div>
-                {/* </div> */}
-                <div className={classes.root1} >
-                {/* <form className={classes.root1} noValidate autoComplete="off"> */}
-                <TextField required style={{marginBottom: "20px"}} id="filled-basic" label="Project" name="message"  variant="filled" />
+      <div className={classes.root1} >
+      <TextField required style={{marginBottom: "20px"}} id="filled-basic" label="Project" type="message" variant="filled" />
 
-    <TextField
-    id="outlined-multiline-static"
-    label="Message"
-    name="message"
-    required 
-    multiline
-    rows={10}
-    //   defaultValue="Default Value"
-    variant="outlined"
-      />
-                <div>
-                <Button color="primary" onClick={handleOpen} variant="outlined" type="submit" value="send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
-    
-      <Modal
+    <TextField id="outlined-multiline-static" label="Message" name="message" required multiline rows={10} variant="outlined"/>
+
+      <div>
+       <Button color="primary" variant="outlined" type="submit" value="Send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
+  
+      {/* <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         className={classes.modal}
@@ -112,12 +108,11 @@ const Contact = () => {
         <Fade in={open}>
           <div className={classes.paper}>
             <h2 id="transition-modal-title">Successfully</h2>
-            <p id="transition-modal-description">We will contact you very soon.</p>
+            <p id="transition-modal-description">We will contact you very soon.Thanks</p>
           </div>
         </Fade>
-      </Modal>
+      </Modal> */}
     </div>
-    {/* </form> */}
     
                 </div>
 </form>

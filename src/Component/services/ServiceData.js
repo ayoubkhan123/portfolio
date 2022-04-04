@@ -4,20 +4,19 @@ import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 const ServiceData=[
 {
     icon: <QuestionAnswerIcon style={{fontSize: "50px"}}/>,
-    title: " Ui / Ux",
-    head: "Disigner",
+    title: "React JS",
+    head: "Development",
 },
 {
     icon: <CodeIcon style={{fontSize: "50px"}}/>,
-    title: " Frontend",
-    head: "Developer",
+    title: "Website",
+    head: "Development",
 },
 {
     icon: <BorderColorIcon style={{fontSize: "50px"}}/>,
-    title: "Branding",
+    title: "Website",
     head: "Designer",
 },
 ]
-
 
 export default ServiceData;

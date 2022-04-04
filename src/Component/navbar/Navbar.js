@@ -1,9 +1,8 @@
 import React,{useState} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import {NavDropdown,Button,FormControl,Form,Nav,Container} from 'react-bootstrap';
+import {Button,Form,Nav,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from "react-router-dom";
-// import MenuIcon from '@material-ui/icons/Menu';
 import {useNavigate} from "react-router-dom";
 import { makeStyles,} from '@material-ui/core/styles';
 import img1 from "../../Assets/kisspng-def-con-logo-gray-wolf-5b01f8e1d0fce7.676530041526855905856.jpg";
@@ -61,7 +60,6 @@ const useStyles = makeStyles((theme) =>({
         left: "0",
         fontSize: "25px",
         fontWeight: "bold",
-        //  color: "red !important",
          zIndex: "10000",
         width: "100%",
         background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc) !important",
@@ -69,10 +67,6 @@ const useStyles = makeStyles((theme) =>({
 
         "& :link":{
         color: "black !important",
-      //   '& > *' : {
-      //     color: 'red !important',
-      //     fontWeight: 600
-      // }
        }
       },
 
@@ -101,7 +95,8 @@ const Navbar1 = () => {
 
 <Navbar id="menu" className={`${classes.navbar2}  ${!color && classes.navbar_bg}`} bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#" style={{color: "white"}}>AYYub
+    <Navbar.Brand href="#" style={{color: "orange", textShadow: "0.025em 0.025em 0 yellow, 0.05em 0.05em 0 blue, 0.075em 0.075em 0 red, 0.1em 0.1em 0 black",
+}}>AYYub
     <img src={img1} alt="" style={{width: "80px",height: "auto", borderRadius: "50%",marginLeft: "20px"} }/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
@@ -122,12 +117,11 @@ const Navbar1 = () => {
         />
         <Button variant="outline-primary">Search</Button> */}
         <nav className={classes.links}>
-            <Link className={classes.link} to="/">Home</Link>
+            <Link className={classes.link} to="*">Home</Link>
             <Link className={classes.link} to="/about">About</Link>
             <Link className={classes.link} to="/skill">Skills</Link>
             <Link className={classes.link} to="/services">Services</Link>
             <Link className={classes.link} to="/portfolio">Team</Link>
-
             <Link className={classes.link} to="/contact">Contact me</Link>
             <Button onClick={() => {navigate("/contact")}} variant="warning" color="primary">Hire Me</Button>
             </nav>

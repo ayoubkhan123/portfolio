@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) =>({
         marginLeft: "30px",
         [theme.breakpoints.down("xs")]:{
             width: "315px",
-            margin: "0px -64px",
+            margin: "0px -41px",
             padding: "0px 0px",
         },
         "& h4":{
