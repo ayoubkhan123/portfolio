@@ -9,24 +9,14 @@ import {useNavigate} from "react-router-dom";
 
 const HomePart = () => {
     const classes = useStyles();
-    const purple = "linear-gradient( 262deg , #c2cfe3, #f8f9fc)";
     const navigate = useNavigate();
    
-    const [color, changeColor] = useState(purple);
-    const bgChange = () =>{
-            let newG = "white";
-            changeColor(newG);
-    };
-    const bgChanges = () =>{
-        let newG = "linear-gradient( 262deg , #c2cfe3, #f8f9fc)";
-        changeColor(newG);
-};
     useEffect(() =>{
         Aos.init({duration: 3000,})
     },[]);
    
     return (
-        <div className={classes.HomeMain} style={{background: color}}>
+        <div className={classes.HomeMain}>
                     <div data-aos="fade-down" className={classes.mainText}>
                     <h1>Hi,I`am Ayyub</h1>
                     <h4>Front-end web developer</h4>
