@@ -8,12 +8,15 @@ import Contact from "../pages/Contact";
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 import Navbar1 from "../Component/navbar/Navbar";
 import Footer from "../Component/footer/Footer";
+import ScrollTop from "../Component/scrollTop/ScrollTop";
+
 
 
 const Routess = () => {
     return (
         <div>
       <Router>
+      <ScrollTop>
       <Navbar1/>
       <Routes>
       <Route path="*" exact element={<Home/>}/>
@@ -24,6 +27,7 @@ const Routess = () => {
       <Route path="/contact" exact element={<Contact/>}/>
       </Routes>
       <Footer/>
+      </ScrollTop>
       </Router>
         </div>
     )

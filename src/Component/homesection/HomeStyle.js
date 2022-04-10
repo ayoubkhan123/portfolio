@@ -3,7 +3,7 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles((theme) =>({
 HomeMain:{
     width: "100%",
-    height: "35rem",
+    height: "100vh",
     // paddingTop: "100px",
     // background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc)",
     display: "flex",
