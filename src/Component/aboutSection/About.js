@@ -1,6 +1,6 @@
 import React,{ useEffect} from 'react';
 import useStyles from "./AboutStyle";
-import img1 from "../../Assets/DSC_5399.jpg";
+import img1 from "../../Assets/DSC_5.JPG";
 import {Button} from "@material-ui/core";
 import GetAppIcon from '@material-ui/icons/GetApp';
 import Aos from "aos";

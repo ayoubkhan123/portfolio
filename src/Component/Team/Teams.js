@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 // import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TeamData from "./TeamData";
-import img1 from "../../Assets/DSC_5399.jpg";
+import img1 from "../../Assets/DSC_5.JPG";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

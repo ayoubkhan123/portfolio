@@ -1,4 +1,4 @@
-import img1 from "../../Assets/DSC_5294.jpg";
+import img1 from "../../Assets/DSC_5.JPG";
 import img2 from "../../Assets/photo-1481437642641-2f0ae875f836.jpg";
 import img3 from "../../Assets/photo-1481437642641-2f0ae875f836.jpg";
 

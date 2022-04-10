@@ -1,7 +1,7 @@
 import React, { useEffect}from 'react';
 import {useNavigate} from "react-router-dom";
 import useStyles from './BoxStyle';
-import img1 from "../../Assets/photo-1481437642641-2f0ae875f836.jpg"
+import img1 from "../../Assets/photo-1498050108023-c5249f4df085.avif";
 import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
 import Aos from "aos";

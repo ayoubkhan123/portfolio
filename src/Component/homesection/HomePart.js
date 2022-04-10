@@ -29,7 +29,7 @@ const HomePart = () => {
         <div className={classes.HomeMain} style={{background: color}}>
                     <div data-aos="fade-down" className={classes.mainText}>
                     <h1>Hi,I`am Ayyub</h1>
-                    <h4>Front-end developer</h4>
+                    <h4>Front-end web developer</h4>
                     <p>High level experience in web design and <br/> development knowledge producing <br/> quality work</p>
                     <Button onClick={() => navigate("/portfolio")} variant="contained" color="primary">
         My Teams <span style={{paddingLeft: "15px"}}><SendIcon/></span>
