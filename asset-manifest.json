@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/teamworks/static/css/main.151bfff1.css",
-    "main.js": "/teamworks/static/js/main.9288564a.js",
+    "main.js": "/teamworks/static/js/main.4d9d97a4.js",
     "static/js/787.ee9b4fc8.chunk.js": "/teamworks/static/js/787.ee9b4fc8.chunk.js",
     "static/media/DSC_5294.jpg": "/teamworks/static/media/DSC_5294.9dde53819cd06631f5de.jpg",
     "static/media/ABIGAIL STANFORD.pdf": "/teamworks/static/media/ABIGAIL STANFORD.e21108f50d4f4337863b.pdf",
     "static/media/kisspng-def-con-logo-gray-wolf-5b01f8e1d0fce7.jpg": "/teamworks/static/media/kisspng-def-con-logo-gray-wolf-5b01f8e1d0fce7.676530041526855905856.4880b2a8b658a8088433.jpg",
-    "static/media/DSC_5399.jpg": "/teamworks/static/media/DSC_5399.21a5a0e3c3c3c1759087.jpg",
+    "static/media/DSC_5.JPG": "/teamworks/static/media/DSC_5.b534d67bc10cd80bdb78.JPG",
     "static/media/photo-1481437642641-2f0ae875f836.jpg": "/teamworks/static/media/photo-1481437642641-2f0ae875f836.9be53ba6526f111de595.jpg",
+    "static/media/photo-1498050108023-c5249f4df085.avif": "/teamworks/static/media/photo-1498050108023-c5249f4df085.d960b0d7e34a8a6295d2.avif",
     "index.html": "/teamworks/index.html",
     "main.151bfff1.css.map": "/teamworks/static/css/main.151bfff1.css.map",
-    "main.9288564a.js.map": "/teamworks/static/js/main.9288564a.js.map",
+    "main.4d9d97a4.js.map": "/teamworks/static/js/main.4d9d97a4.js.map",
     "787.ee9b4fc8.chunk.js.map": "/teamworks/static/js/787.ee9b4fc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.151bfff1.css",
-    "static/js/main.9288564a.js"
+    "static/js/main.4d9d97a4.js"
   ]
 }
