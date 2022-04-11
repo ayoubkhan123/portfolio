@@ -5,7 +5,7 @@ HomeMain:{
     width: "100%",
     height: "100vh",
     // paddingTop: "100px",
-    // background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc)",
+    background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc)",
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",

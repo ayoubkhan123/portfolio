@@ -121,7 +121,7 @@ const Navbar1 = () => {
             <Link className={classes.link} to="/about">About</Link>
             <Link className={classes.link} to="/skill">Skills</Link>
             <Link className={classes.link} to="/services">Services</Link>
-            <Link className={classes.link} to="/portfolio">Team</Link>
+            <Link className={classes.link} to="/team">Team</Link>
             <Link className={classes.link} to="/contact">Contact me</Link>
             <Button onClick={() => {navigate("/contact")}} variant="warning" color="primary">Hire Me</Button>
             </nav>
