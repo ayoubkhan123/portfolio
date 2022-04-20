@@ -3,7 +3,7 @@ const useStyles = makeStyles((theme) =>({
 mainAbout:{
     width: "100%",
     height: "45rem",
-    background: "linear-gradient( 262deg , #e6fffb, #e1f9f8)",
+    // background: "linear-gradient( 262deg , #e6fffb, #e1f9f8)",
    [theme.breakpoints.down("sm")]:{
             height: "auto",
             padding: "40px 0px",

@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) =>({
     },
     skill_text:{
         textAlign: "center",
+        paddingBottom: "20px",
     "& h1":{
     fontWeight: "bold",
     },

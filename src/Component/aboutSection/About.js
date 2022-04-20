@@ -32,7 +32,7 @@ const About = () => {
                   <h6>years <br/> experience</h6>
               </div>
               <div>
-                  <h2><CountUp start={0} separator={0} end={30} duration={5} startOnMount={false} /></h2>
+                  <h2><CountUp start={0} separator={0} end={65} duration={5} startOnMount={false} />+</h2>
                   <h6>completed <br/>projects</h6>
               </div>
               <div>
