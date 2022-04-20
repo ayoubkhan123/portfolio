@@ -1,6 +1,6 @@
 import React,{useRef,useEffect, useState} from 'react';
 import useStyles from "./ContactStyle";
-import {Formik,Form,Field,ErrorMessage,FieldArray,FastField} from "formik";
+// import {Formik,Form,Field,ErrorMessage,FieldArray,FastField} from "formik";
 import * as Yup from "yup"; 
 import CallIcon from '@material-ui/icons/Call';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -11,27 +11,30 @@ import emailjs from "emailjs-com";
 import Aos from "aos";
 import SendIcon from '@material-ui/icons/Send';
 import "aos/dist/aos.css";
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
+// import Modal from '@material-ui/core/Modal';
+// import Backdrop from '@material-ui/core/Backdrop';
+// import Fade from '@material-ui/core/Fade';
 
 const Contact = () => {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
-  //   const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
-const onSubmit = (values, onSubmitProps) => {
-  console.log("Form data", values)
-  console.log("submit props", onSubmitProps)
-  onSubmitProps.setSubmitting(false)
-  onSubmitProps.resetForm()
-}
-  const handleOpen = () => {
-    setOpen(true);   
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
+    // const [open, setOpen] = React.useState(false);
+    const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [project, setProject] = useState("");
+  const [message, setMessage] = useState("");
+
+// const onSubmit = (values, onSubmitProps) => {
+//   console.log("Form data", values)
+//   console.log("submit props", onSubmitProps)
+//   onSubmitProps.setSubmitting(false)
+//   onSubmitProps.resetForm()
+// }
+  // const handleOpen = () => {
+  //   setOpen(true);   
+  // };
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
     useEffect(() =>{
         Aos.init({duration: 2000})
     },[]);
@@ -45,6 +48,10 @@ const onSubmit = (values, onSubmitProps) => {
           }, (error) => {
               console.log(error.text);
           });
+          setName("");
+          setEmail("");
+          setMessage("");
+          setProject("");
       };
     
   return(
@@ -79,16 +86,16 @@ const onSubmit = (values, onSubmitProps) => {
 
 
                 <div  className={classes.InputFlex}>
-                <form method="GET" ref={form} onSubmit={sendEmail} data-aos="fade-down">
+                <form ref={form} onSubmit={sendEmail}>
                 <div className={classes.root}>
-      <TextField style={{marginBottom: "10px",}} required  id="filled-basic" label="Name" type="name" name="name" variant="filled" fullWidth/>
+      <TextField style={{marginBottom: "10px",}} required value={name} onChange={(e) => setName(e.target.value)} id="filled-basic" label="Name" type="name" variant="filled" fullWidth/>
       
-      <TextField id="filled-basic" type="email" name="email" label="Email" required variant="filled" fullWidth />  
+      <TextField id="filled-basic" type="email" label="Email" value={email} onChange={(e) => setEmail(e.target.value)} required variant="filled" fullWidth />  
     </div>
       <div className={classes.root1} >
-      <TextField required style={{marginBottom: "20px"}} id="filled-basic" label="Project" type="message" variant="filled" />
+      <TextField required style={{marginBottom: "20px"}} value={project} onChange={(e) => setProject(e.target.value)} id="filled-basic" label="Project" name="message" variant="filled" />
 
-    <TextField id="outlined-multiline-static" label="Message" name="message" required multiline rows={10} variant="outlined"/>
+    <TextField id="outlined-multiline-static" label="Message" value={message} onChange={(e) => setMessage(e.target.value)} type="message" required multiline rows={10} variant="outlined"/>
 
       <div>
        <Button color="primary" variant="outlined" type="submit" value="Send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>

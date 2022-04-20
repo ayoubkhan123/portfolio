@@ -38,9 +38,9 @@ mainText:{
 },
 
 images:{
-    width: "400px",
+    width: "460px",
     animationName: "example",
-    height: "340px",
+    height: "410px",
     clipPath: "polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%)",
     background: "linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%)",
     display: "flex",
@@ -49,8 +49,8 @@ images:{
     borderRadius: "50%",
     margin: "0px 10px",
     "& img":{
-        width: "350px",
-        height: "300px",
+        width: "420px",
+        height: "370px",
         clipPath: "polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%)",
         borderRadius: "50%",
         [theme.breakpoints.down("xs")]:{
