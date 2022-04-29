@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) =>({
         },
         
     },
+    heading:{
+        color: "white !important",
+    },
     skill_text:{
         textAlign: "center",
         paddingBottom: "20px",
@@ -20,8 +23,9 @@ const useStyles = makeStyles((theme) =>({
     },
     Accordion2:{
         width: "90%",
-        textTransform: "capitalize",
-      
+        textTransform: "capitalize", 
+        background: "linear-gradient(to left, #8f94fb, #4e54c8) !important",
+
         "& h5":{
               
                 "& span":{

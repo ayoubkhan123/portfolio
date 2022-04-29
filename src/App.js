@@ -5,7 +5,23 @@ import "./App.css";
 export default function App() {
   return (
     <div>
-    <Routess/>
+    
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+<Routess/>
+    </div>
+
     </div>
   )
 }

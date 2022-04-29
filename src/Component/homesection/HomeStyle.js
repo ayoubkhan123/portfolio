@@ -4,12 +4,11 @@ const useStyles = makeStyles((theme) =>({
 HomeMain:{
     width: "100%",
     height: "100vh",
-    // paddingTop: "100px",
-    background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc)",
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
     flexWrap: "wrap",
+    zIndex: "200",
     [theme.breakpoints.down("sm")]:{
         height: "auto !important",
         paddingBottom: "30px",
@@ -39,7 +38,6 @@ mainText:{
 
 images:{
     width: "460px",
-    animationName: "example",
     height: "410px",
     clipPath: "polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%)",
     background: "linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%)",
@@ -47,6 +45,11 @@ images:{
     justifyContent: "center",
     alignItems: "flex-end",
     borderRadius: "50%",
+    "& :hover":{
+        transform: "rotate(30deg)",
+        transition: "transform 3s",
+       },
+  
     margin: "0px 10px",
     "& img":{
         width: "420px",

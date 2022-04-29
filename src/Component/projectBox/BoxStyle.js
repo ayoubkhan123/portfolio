@@ -7,6 +7,7 @@ justifyContent: "center",
 alignItems: "center",
 background: "#f4f2ff",
 padding: "50px 0px",
+background: "linear-gradient(to left, #8f94fb, #4e54c8) !important",
 
 },
 insideBox:{
@@ -34,28 +35,16 @@ insideBox:{
         color: "white",
         "& button":{
             background: "primary",
-                // color: "white",
                 fontWeight: "bold",
                 marginTop: "30px",
                 height: "50px",
         },
         "& h1":{
-            // marginTop: "100px",
-            // paddingLeft: "40px",
             display: "flex",
             alignItems: "center",
             },
         "& h5":{
-            // paddingLeft: "40px",
             paddingTop: "20px",
-        },
-        image:{
-
-            // "& img":{
-            //     width: "200px",
-            //     height: "130px",
-            // },
-                
         },
           "& img":{
             borderRadius: "10px",

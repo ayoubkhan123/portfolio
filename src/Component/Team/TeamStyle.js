@@ -17,17 +17,19 @@ root: {
     width: 345,
     height: "auto",
     margin: "50px 20px",
-    boxShadow: "1px 2px 6px 1px",
+    // boxShadow: "1px 2px 6px 1px",
     textAlign: "center",
     display: "grid",
+    background: "#aeb6e1",
     justifyContent: "center",
+    color: "white !important",
      alignItems: "center",
     [theme.breakpoints.down("sm")]:{
     display: "none",
 },
     "&:hover":{
         background: "cyan",
-        color: "white !important",
+        
     },
     
   },

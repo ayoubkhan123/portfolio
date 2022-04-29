@@ -6,6 +6,7 @@ mainFooter:{
     // height: "30rem",
     background: "gray",
     paddingTop: "40px",
+    background: "linear-gradient(to left, #8f50fb, #4e40c8) !important",
     [theme.breakpoints.down("xs")]:{
             height: "auto",
     },
@@ -42,7 +43,7 @@ footerLast:{
         textAlign: "center",
         height: "80px",
         padding: "30px 0px",
-        background: "black",
+       
 },
 
 

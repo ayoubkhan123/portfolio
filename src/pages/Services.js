@@ -5,7 +5,7 @@ import Service from "../Component/services/Service";
 
 const Services = () => {
     return (
-        <div style={{padding: "30px",background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc)"}}>
+        <div style={{padding: "30px",background: "linear-gradient(to left, #8f94fb, #4e54c8)"}}>
             <Service/>
         </div>
     )

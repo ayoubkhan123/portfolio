@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className={classes.footerLast}>
 
-       <h5>Copyright <CopyrightIcon/>CodeOpacity. Designed by <span style={{color: "gray"}}>AYYub khan</span></h5>
+       <h5>Copyright <CopyrightIcon/>CodeOpacity. Designed by <span style={{color: "orange"}}>AYYub khan</span></h5>
 
         </div>
 

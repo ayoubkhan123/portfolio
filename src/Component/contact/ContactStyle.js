@@ -10,9 +10,6 @@ contactMain:{
     },
 },
 InputFlex:{
-// width: "100%",
-// display: "grid",
-// justifyContent: "center",
 paddingTop: "60px",
 },
 contactText:{
@@ -25,6 +22,7 @@ root: {
     // display: "block !important",
     display: "block",
     width: "456px",
+    color: "white !important",
     margin: "10px 0px",
     [theme.breakpoints.down("xs")]:{
         width: "90% !important",

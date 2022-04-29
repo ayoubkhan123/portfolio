@@ -23,7 +23,7 @@ import "aos/dist/aos.css";
           ServiceData.map((elem) =>{
             return(
               <Card data-aos="zoom-in" className={classes.root}>
-      <CardActionArea>
+      <CardActionArea style={{paddingTop: "10px",color: "white",}}>
         {/* <CardMedia
           className={classes.media}
           image="/static/images/cards/contemplative-reptile.jpg"
@@ -33,9 +33,9 @@ import "aos/dist/aos.css";
           <Typography gutterBottom variant="h5" component="h2">
             {elem.icon}
           </Typography>
-          <Typography variant="h4" color="textSecondary" component="p" style={{paddingTop: "20px"}}>
+          <Typography variant="h4" component="p" style={{paddingTop: "20px"}}>
            {elem.title}
-           <h3 style={{paddingTop: "10px"}}>{elem.head}</h3>
+           <h3 style={{paddingTop: "10px",color: "white",}}>{elem.head}</h3>
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -43,13 +43,14 @@ import "aos/dist/aos.css";
         {/* <Button size="small" color="primary">
           Share
         </Button> */}
-        <Button size="small" color="primary">
-          View More <ArrowForwardIcon style={{fontSize: "20px",paddingBottom: "2px",paddingLeft: "5px"}}/>
+        <Button size="small">
+          View More <ArrowForwardIcon style={{fontSize: "20px",paddingBottom: "2px", paddingLeft: "5px"}}/>
         </Button>
       </CardActions>
     </Card>
             )
           })
+          
         }
         </div>
     </div>

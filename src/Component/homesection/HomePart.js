@@ -6,6 +6,7 @@ import SendIcon from '@material-ui/icons/Send';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {useNavigate} from "react-router-dom";
+import "./Style.css";
 
 const HomePart = () => {
     const classes = useStyles();
@@ -17,6 +18,7 @@ const HomePart = () => {
    
     return (
         <div className={classes.HomeMain}>
+
                     <div data-aos="fade-down" className={classes.mainText}>
                     <h1>Hi,I`am Ayyub</h1>
                     <h4>Front-end web developer</h4>
@@ -32,7 +34,11 @@ const HomePart = () => {
                     <div data-aos="flip-right" className={classes.images}>
                         <img src={img} alt=""/>
                     </div>
+
+         
         </div>
+       
+
     )
 }
 

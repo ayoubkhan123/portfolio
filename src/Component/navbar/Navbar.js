@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) =>({
       "&:hover":{ 
         color: "orange",
       },
-      color: "black",
+      color: "white",
       fontWeight: "bold",
         padding: "0px 25px",
         textDecoration: "none", 
@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) =>({
             paddingBottom: "30px",
             overFlow: "hidden",
             "&:hover":{
-              // color: "black",
             border: "none",
             },
         },
@@ -45,13 +44,11 @@ const useStyles = makeStyles((theme) =>({
       left: "0",
       fontSize: "25px",
       fontWeight: "bold",
-      //  color: "white !important",
        "& :link":{
-        // color: "white !important",
        },
        zIndex: "10000",
        transition: "0.8s all ease-in-out",
-       background: "#4B79A1 !important",
+      background: "#042C99 !important",
       width: "100%",
     },
     navbar_bg:{
@@ -62,11 +59,13 @@ const useStyles = makeStyles((theme) =>({
         fontWeight: "bold",
          zIndex: "10000",
         width: "100%",
-        background: "linear-gradient( 262deg , #c2cfe3, #f8f9fc) !important",
+        background: "linear-gradient(to left, #8f94fb, #4e54c8) !important",
+
+
         "& links":{
 
         "& :link":{
-        color: "black !important",
+        color: "white !important",
        }
       },
 

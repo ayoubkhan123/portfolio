@@ -27,16 +27,17 @@ const Skill = () => {
             SkillData.map((elem) =>{
                 return(
                     <>
-                    <Accordion style={{marginBottom: "50px"}}>
+                    <Accordion style={{marginBottom: "50px",background: "#0824A8",color: "white"}}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon/>}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Typography className={classes.heading}><CodeIcon/> <span style={{fontWeight: "bold"}}>{elem.title}</span><br/>
           <span style={{color: "gray",fontSize: "15px",paddingLeft: "30px"}}>{elem.years}</span></Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        
+        <AccordionDetails style={{color: "white !important"}}>
           <Typography style={{width: "100%"}}>
         <h5>{elem.html}<span>90%</span></h5>
         <ProgressBar now={90} />

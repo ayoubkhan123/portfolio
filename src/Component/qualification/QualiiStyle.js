@@ -20,10 +20,14 @@ const useStyles = makeStyles((theme) =>({
         flexGrow: 1,
         // width: "100%",
         // height: "auto",
-        height: "400px",
-        backgroundColor: theme.palette.background.paper,
+        height: "440px",
+        // backgroundColor: theme.palette.background.paper,
+        // background: "blue",
+        background: "linear-gradient(to left, #8f94fb, #4e54c8)",
         display: "grid",
         justifyContent: "center",
+        color: "black !important",
+
         // alignItems: "center",
       },
       root1: {

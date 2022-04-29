@@ -16,6 +16,7 @@ mainService:{
     width: "345px",
     height: "300px",
     display: "grid",
+    background: "#5e6486",
     alignItems: "flex-end",
     [theme.breakpoints.down("xs")]:{
         width: "80%",

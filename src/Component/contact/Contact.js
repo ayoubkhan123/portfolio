@@ -88,7 +88,7 @@ const Contact = () => {
                 <div  className={classes.InputFlex}>
                 <form ref={form} onSubmit={sendEmail}>
                 <div className={classes.root}>
-      <TextField style={{marginBottom: "10px",}} required value={name} onChange={(e) => setName(e.target.value)} id="filled-basic" label="Name" type="name" variant="filled" fullWidth/>
+      <TextField style={{marginBottom: "10px"}} pattern="{0-9} {5}" required value={name} onChange={(e) => setName(e.target.value)} id="filled-basic" label="Name" type="name" variant="filled" fullWidth/>
       
       <TextField id="filled-basic" type="email" label="Email" value={email} onChange={(e) => setEmail(e.target.value)} required variant="filled" fullWidth />  
     </div>
@@ -98,7 +98,7 @@ const Contact = () => {
     <TextField id="outlined-multiline-static" label="Message" value={message} onChange={(e) => setMessage(e.target.value)} type="message" required multiline rows={10} variant="outlined"/>
 
       <div>
-       <Button color="primary" variant="outlined" type="submit" value="Send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
+       <Button color="primary" variant="contained" type="submit" value="Send" className={classes.btn_last}>Submit<SendIcon style={{marginLeft: "10px",color: "black"}}/></Button>
   
       {/* <Modal
         aria-labelledby="transition-modal-title"
