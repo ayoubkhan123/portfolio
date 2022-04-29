@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4d577bdb.css",
-    "main.js": "/portfolio/static/js/main.2362fdcc.js",
+    "main.js": "/portfolio/static/js/main.2ed06837.js",
     "static/js/787.ee9b4fc8.chunk.js": "/portfolio/static/js/787.ee9b4fc8.chunk.js",
     "static/media/DSC_5294.jpg": "/portfolio/static/media/DSC_5294.9dde53819cd06631f5de.jpg",
     "static/media/ABIGAIL STANFORD.pdf": "/portfolio/static/media/ABIGAIL STANFORD.e21108f50d4f4337863b.pdf",
@@ -11,11 +11,11 @@
     "static/media/photo-1498050108023-c5249f4df085.avif": "/portfolio/static/media/photo-1498050108023-c5249f4df085.d960b0d7e34a8a6295d2.avif",
     "index.html": "/portfolio/index.html",
     "main.4d577bdb.css.map": "/portfolio/static/css/main.4d577bdb.css.map",
-    "main.2362fdcc.js.map": "/portfolio/static/js/main.2362fdcc.js.map",
+    "main.2ed06837.js.map": "/portfolio/static/js/main.2ed06837.js.map",
     "787.ee9b4fc8.chunk.js.map": "/portfolio/static/js/787.ee9b4fc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d577bdb.css",
-    "static/js/main.2362fdcc.js"
+    "static/js/main.2ed06837.js"
   ]
 }
